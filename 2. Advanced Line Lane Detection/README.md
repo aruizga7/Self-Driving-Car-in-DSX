@@ -1,6 +1,4 @@
-## Advanced Lane Finding - P4
-
-This is the fourth project in the Udacity Self-Driving car nanodegree.
+## Advanced Lane Finding 
 
 The goals / steps of this project are the following:
 
@@ -13,17 +11,16 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-The accompanying jupyter notebook `Advanced Lane Line Finding Workbook.ipynb` contains all the code mentioned in this readme file. A copy is also saved in html format as `Advanced+Lane+Line+Finding+Workbook.html`.
 
 Output of lane finding pipeline on sample video:
 
-[![Advanced Lane Finding for Udacity Self Driving Car Nanodegree](https://img.youtube.com/vi/yS0ocyJpHRU/0.jpg)](https://www.youtube.com/watch?v=yS0ocyJpHRU)
+[![Advanced Lane Finding for Udacity Self Driving Car Nanodegree](https://img.youtube.com/vi/yS0ocyJpHRU/0.jpg)](https://www.youtube.com/watch?v=DO40OF0l2x8)
 
 ---
 ### Camera Calibration
 With a set of camera calibration images (chessboards) in the camera_cal folder I am able to calculate the camera distortion parameters and use these to un-distort our images.
 
-First of all I need to detect the inner-corners of the calibration images. This can be seen in cell 2 and 3 of the jupyter notebook: `Advanced Lane Line Finding Workbook.ipynb`. In these cells I display the given chessboard calibration images, calculate the object and image points (as discussed below), then display a sample of the found chessboard corners in one image.
+First of all I need to detect the inner-corners of the calibration images. This can be seen in  jupyter notebook: `2. Advanced Lane Line Detection.ipynb`. In these cells I display the given chessboard calibration images, calculate the object and image points (as discussed below), then display a sample of the found chessboard corners in one image.
 The object and image points are saved in arrays: `objpoints` and `imgpoints`.
 
 In finding the corners I also prepare an "object points" array, which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I'm assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
@@ -90,8 +87,6 @@ Here is some examples of warped test images:
 |:-------------------------------------------:|:----------------------------------:|
 | ![](output_images/warped_test_straight.jpg) | ![](output_images/warped_test.jpg) |
 
-And here is a sample image that has had our binary thresholding and perspective transform applied where we can clearly see the lane lines (with a little bit of noise):
-![](output_images/binary_warped.jpg)
 
 #### Finding the lane lines
 With our binary warped image above I then searched for the lane lines as follows:
@@ -103,19 +98,12 @@ Histogram along the bottom of thhe above binary warped image:
 
 ![](output_images/histogram.jpg)
 
-Cell 15 of the notebook include my `find_lane_lines()` function. This function implements the sliding window technique to find the lane lines and fit a polynomial using 9 windows from the bottom to the top of the image. When run in debug mode it will draw each window onto an image so we can see how it iteratively finds the lane lines.
-
-![](output_images/sliding_windows.png)
-
-Cells 17 and 18 show a faster method that can be used for finding the lanes on subsequent frames in video footage. I have tested this in the notebook as can be seen but have not used it in my final pipeline processing as of yet.
-
-(Note: we also show the lane line curvature radius which is explained further below.)
 
 ![Lanes lines detected in sample image](output_images/result.jpg)
 
-Notebook cell 19 shows the `draw_lanes_on_image()` function which I used to highlight the road lane lines with a filled polygon (`cv2.fillPoly()`). This function then un-warps the image (using the inverse perspective transform parameters saved earlier - Minv) to show the completed result (as above).
+Notebook  shows the `draw_lanes_on_image()` function which I used to highlight the road lane lines with a filled polygon (`cv2.fillPoly()`). This function then un-warps the image (using the inverse perspective transform parameters saved earlier - Minv) to show the completed result (as above).
 
-The completed pipeline can be clearly seen in function `process_image()` in notebook cell 20. Cell 21 then executes this for one sample image.
+The completed pipeline can be clearly seen in function `process_image()`. Then we execute this for one sample image.
 
 #### Radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -136,7 +124,7 @@ Example image showing
 
 Here is a link to a processed video thats been run through my pipeline (described above). Results on the project video are very good given the little amount of parameter tuning that has been done. There is a slight jitter when the car travels over the differently coloured concrete sections of road, but it is very minor.
 
-[Link to my video result](output_images/project_video_output.mp4)
+[Link to my video result](https://www.youtube.com/watch?v=DO40OF0l2x8)
 
 ---
 
