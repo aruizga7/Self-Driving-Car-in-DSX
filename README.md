@@ -11,7 +11,8 @@ The solutions of this project show the first steps toward having a real self-dri
 -  [Vehicle Detection](https://github.com/aruizga7/Self-Driving-Car-in-DSX/tree/master/4.%20Vehicle%20detection): detect vehicles in a dash camera video. It is an object detection problem and for that we pre-process the images and we re-use a very popular Object Recognition pre-trained model called Yolo (9 convolutional layers and 3 full connected layers). 
 - [Behavioral cloning](https://github.com/aruizga7/Self-Driving-Car-in-DSX/tree/master/5.%20Behavioral%20cloning): train, validate and test a model using Keras to clone driving behavior. The model will output a steering angle to an autonomous vehicle. 
 
-![Advanced Lane Finding for Udacity Self Driving Car Nanodegree](https://github.com/aruizga7/Self-Driving-Car-in-DSX/raw/master/DSX-selfdrivingcar.png)
+<CENTER>
+![Advanced Lane Finding for Udacity Self Driving Car Nanodegree](https://github.com/aruizga7/Self-Driving-Car-in-DSX/raw/master/DSX-selfdrivingcar.png) </CENTER>
 
 
 
