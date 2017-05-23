@@ -115,9 +115,7 @@ Processing:
 - Calculate the curvature as per the equation for radius from a 2nd order polynomial below (as a radius in metres)
 - Calculate the lane deviation from the center (between lane lines and assuming the camera is in the center of the car) - again in real-world space.
 
-![Equation of curvature for 2nd order polynomial](output_images/equation of curvature.png)
 
-Example image showing
 ---
 
 ### Pipeline (video)
