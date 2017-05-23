@@ -1,8 +1,8 @@
-# Project 3: Use Deep Learning to Clone Driving Behavior
+# Use Deep Learning to Clone Driving Behavior
 
 Overview
 ---
-Train, validate and test a model using Keras to clone driving behavior. The model will output a steering angle to an autonomous vehicle.
+In this project we Train, validate and test a model using Keras to clone driving behavior. The model will output a steering angle to an autonomous vehicle.
 Data will be collected by running a car manually in Udacity's Self-Driving Car simulator. The model performance will be tested by running the car in the simulator in autonomous mode.
 
 #### The goals / steps of this project are the following:
@@ -28,6 +28,5 @@ Through this model, the vehicle was able to drive autonomously around the track 
 
 Results
 ---
-View the **[video](https://youtu.be/fuc4ZHDv61g)** on Youtube
+View the **[video](https://www.youtube.com/watch?v=MB-ii0qzUmQ)** on Youtube
 
-![Video][image1]
