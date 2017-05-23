@@ -12,7 +12,8 @@ The solutions of this project show the first steps toward having a real self-dri
 - [Behavioral cloning](https://github.com/aruizga7/Self-Driving-Car-in-DSX/tree/master/5.%20Behavioral%20cloning): train, validate and test a model using Keras to clone driving behavior. The model will output a steering angle to an autonomous vehicle. 
 
 <CENTER>
-![Advanced Lane Finding for Udacity Self Driving Car Nanodegree](https://github.com/aruizga7/Self-Driving-Car-in-DSX/raw/master/DSX-selfdrivingcar.png) </CENTER>
+![Advanced Lane Finding for Udacity Self Driving Car Nanodegree](https://github.com/aruizga7/Self-Driving-Car-in-DSX/raw/master/DSX-selfdrivingcar.png) 
+</CENTER>
 
 #### DSX Notebooks:
 - [Lane Line detection](https://apsportal.ibm.com/analytics/notebooks/62cd9573-d8c0-4fab-b30c-deeef4378086/view?access_token=c8fab7b9ca82e0cd5ff36a2b260b4f61bf6efa9378ede945e452a7a49f30012a)
