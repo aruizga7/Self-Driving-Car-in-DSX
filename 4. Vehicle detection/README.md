@@ -1,8 +1,7 @@
-# Vehicle Detection Project
+# Vehicle Detection 
 
-This is a project for Udacity self-driving car Nanodegree program. The aim of this project is to detect the vehicles in a dash camera video. The implementation of the project is in the file vehicle_detection.ipynb. This implementation is able to achieve 21FPS without batching processing. The final video output is [here](https://github.com/aruizga7/CarND-Vehicle-Detection/raw/master/project_video_output.mp4).
+The aim of this project is to detect the vehicles in a dash camera video. The implementation of the project is in the file 4 - Vehicle Detection Transfer Learning.ipynb. This implementation is able to achieve 21FPS without batching processing. The final video output is [here]https://www.youtube.com/watch?v=CvmmCx0gkes).
 
-In this README, each step in the pipeline will be explained in details.
 
 ## Introduction to object detection
 
